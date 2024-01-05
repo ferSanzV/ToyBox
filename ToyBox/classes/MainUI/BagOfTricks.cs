@@ -659,7 +659,7 @@ namespace ToyBox {
                             Space(25);
                             Label("Please rest after adjusting to recalculate your spell slots.".localize().green());
                         },
-                        () => Toggle("Witch/Shaman: Cackling/Shanting Extends Hexes By 10 Min (Out Of Combat)".localize(), ref Settings.toggleExtendHexes),
+                        () => Toggle("Witch/Shaman: Cackling/Shanting Extends Hexes By 24 Hours (Out Of Combat)".localize(), ref Settings.toggleExtendHexes),
                         () => Toggle("Allow Simultaneous Activatable Abilities (Like Judgements)".localize(), ref Settings.toggleAllowAllActivatable),
                         () => Toggle("Kineticist: Allow Gather Power Without Hands".localize(), ref Settings.toggleKineticistGatherPower),
                         () => Toggle("Barbarian: Auto Start Rage When Entering Combat".localize(), ref Settings.toggleEnterCombatAutoRage),

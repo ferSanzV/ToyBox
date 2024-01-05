@@ -520,7 +520,7 @@ namespace ToyBox.BagOfPatches {
             public static bool Prefix(ContextActionReduceBuffDuration __instance) {
                 if (Settings.toggleExtendHexes && !Game.Instance.Player.IsInCombat
                     && (__instance.TargetBuff.name.StartsWith("WitchHex") || __instance.TargetBuff.name.StartsWith("ShamanHex"))) {
-                    __instance.Target.Unit.Buffs.GetBuff(__instance.TargetBuff).IncreaseDuration(new TimeSpan(0, 10, 0));
+                    __instance.Target.Unit.Buffs.GetBuff(__instance.TargetBuff).IncreaseDuration(new TimeSpan(24, 0, 0));
                     return false;
                 }
                 return true;
